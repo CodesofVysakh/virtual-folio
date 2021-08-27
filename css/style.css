@@ -75,23 +75,84 @@ br.clear {
 }
 
 header{
-
+	padding: 25px 0;
+	background: rgba(156, 156, 156, 0.8);
+	width: 100%;
+	position: absolute;
+	top: 50px;
+}
+header section.wrapper{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
 }
 header h1{
     
 }
 header h1 a{
-    
+	color: #fff;
+	font-size: 22px;
 }
 header nav{
-    
+	width: 50%;
 }
 header nav ul{
-    
+    display: flex;
+	justify-content: center;
 }
 header nav ul li{
+	margin-right: 30px;
+}
+header nav ul li:last-child{
+	margin-right: 0px;
+}
+header nav ul li a{
+    color: rgb(179, 179, 179);
+}
+header nav ul li:first-child a{
+    color: #fff;
+}
+header div.right {
     
 }
-header nav{
-    
+header div.right a.button{
+    padding: 16px;
+	background-color: #005af2;
+	border-radius: 50%;
+}
+header div.right a{
+    color: #fff;
+}
+
+#spotlight{
+	background: url(../images/bg_image_1.jpg) no-repeat center;
+	background-size: cover;
+	color: #fff;
+}
+#spotlight section.wrapper{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+#spotlight h3{
+	
+}
+#spotlight p{
+	margin: 20px 0;
+	color: #fff;
+	font-size: 30px;
+	font-weight: normal;
+
+}
+#spotlight p span{
+	color: #005af2;
+	font-weight: 800;
+	font-size: 34px;
+
+}
+#spotlight span.box{
+	
 }
