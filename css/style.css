@@ -76,7 +76,7 @@ br.clear {
 
 header{
 	padding: 25px 0;
-	background: rgba(156, 156, 156, 0.8);
+	background: rgba(156, 156, 156, 0.9);
 	width: 100%;
 	position: absolute;
 	top: 50px;
@@ -107,7 +107,7 @@ header nav ul li:last-child{
 	margin-right: 0px;
 }
 header nav ul li a{
-    color: rgb(179, 179, 179);
+    color: rgb(204, 204, 204);
 }
 header nav ul li:first-child a{
     color: #fff;
@@ -125,9 +125,16 @@ header div.right a{
 }
 
 #spotlight{
-	background: url(../images/bg_image_1.jpg) no-repeat center;
+	background: url(../images/bg_image_1.jpg) no-repeat;
 	background-size: cover;
 	color: #fff;
+}
+
+#spotlight div.overlay{
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
 }
 #spotlight section.wrapper{
 	height: 100vh;
@@ -153,6 +160,79 @@ header div.right a{
 	font-size: 34px;
 
 }
+#spotlight span{
+
+}
 #spotlight span.box{
+	padding: 12px 40px;
+	background-color: #383739;
+	border-radius: 24px;
+	color: #005af2;
+}
+
+#profile{
+	margin: 100px 0 35px;
+}
+#profile section.wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#profile div.left{
+	width: 45%;
+	margin: 0 auto;
+	position: relative;
+}
+#profile div.left div.image{
+	width: 50%;
+	height: 310px;
+	margin: 0 auto;
+	border: 4px solid blue;
+	position: absolute;
+	top: -150px;
+	left: 50px;
+}
+#profile div.left div.image img{
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 20px;
+	left: -25px;
+}
+#profile div.right{
+	width: 45%;
+}
+#profile div.right h3{
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+#profile div.right span{
+	color: blue;
+}
+#profile div.right p{
+	font-size: 16px;
+	font-weight: normal;
+	color: grey;
+	margin: 10px 0;
+}
+#profile div.right ul{
+	display: flex;
+	flex-direction: column;
+}
+#profile div.right ul li{
+	margin: 6px 0;
+}
+#profile div.right ul li b{
 	
+}
+#profile div.right a{
+	
+}
+#profile div.right a.button{
+	margin: 20px 0;
+	border: 2px solid blue;
+	padding: 12px 16px;
+	display: inline-block;
+	color: blue;
+	border-radius: 12px;
 }
