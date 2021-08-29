@@ -175,29 +175,30 @@ header div.right a{
 }
 #profile section.wrapper{
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 }
 #profile div.left{
-	width: 45%;
-	margin: 0 auto;
+	width: 40%;
+	margin-right: 50px;
 	position: relative;
 }
 #profile div.left div.image{
-	width: 50%;
-	height: 310px;
-	margin: 0 auto;
-	border: 4px solid blue;
+	width: 60%;
+	position: relative;
+}
+#profile div.left div.image div.box{
+	height: 100%;
+	width: 100%;
+	border: 4px solid #005af2;
 	position: absolute;
-	top: -150px;
-	left: 50px;
+    top: -20px;
+    left: 20px;
+    z-index: -2;
 }
 #profile div.left div.image img{
 	display: block;
 	width: 100%;
-	position: absolute;
-	top: 20px;
-	left: -25px;
 }
 #profile div.right{
 	width: 45%;
@@ -207,7 +208,7 @@ header div.right a{
 	margin-bottom: 10px;
 }
 #profile div.right span{
-	color: blue;
+	color: #005af2;
 }
 #profile div.right p{
 	font-size: 16px;
@@ -221,6 +222,26 @@ header div.right a{
 }
 #profile div.right ul li{
 	margin: 6px 0;
+	position: relative;
+}
+#profile div.right ul li span{
+	border: 2px solid #005af2;
+    display: inline-block;
+    width: 12px;
+	height: 12px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+#profile div.right ul li span::after {
+    content: "";
+    border-left: 1px solid #005af2;
+    height: 21px;
+    position: absolute;
+    top: 14px;
+    left: 5px;
+}
+#profile div.right ul li:last-child span::after {
+	border: none;
 }
 #profile div.right ul li b{
 	
@@ -230,9 +251,160 @@ header div.right a{
 }
 #profile div.right a.button{
 	margin: 20px 0;
-	border: 2px solid blue;
+	border: 2px solid #005af2;
 	padding: 12px 16px;
 	display: inline-block;
-	color: blue;
+	color: #005af2;
 	border-radius: 12px;
+} 
+
+#skills{
+
+padding: 20px 0 60px;
+}
+#skills h3{
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+#skills div.container{
+	display: flex;
+	justify-content: flex-start;
+}
+#skills div.container div.content{
+	width: 50%;
+}
+#skills div.container div.content h5{
+
+	font-size: 22px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+#skills div.container div.content ul{
+
+}
+#skills div.container div.content ul li{
+
+}
+#skills div.container div.content ul li h6{
+	font-size: 18px;
+}
+#skills div.container div.content ul li div.border{
+
+border: 3px solid #005af2;
+
+padding: 1px;
+
+border-radius: 20px;
+
+width: 90%;
+
+margin: 8px 0;
+}
+#skills div.container div.content ul li div.border span{
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	border-radius: 30px;
+	padding: 3px 16px;
+	background: #005af2;
+	display: block;
+	width: 85%;
+}
+#skills div.container div.content ul li:first-child div.border span{
+	width: 86%;
+}
+#skills div.container div.content ul li:nth-child(2) div.border span{
+	width: 80%;
+}
+#skills div.container div.content ul li:nth-child(3) div.border span{
+	width: 100%;
+}
+#skills div.container div.content ul li:last-child div.border span{
+	width: 95%;
+}
+#skills div.container div.right ul li:first-child div.border span{
+	width: 82%;
+}
+#skills div.container div.right ul li:nth-child(2) div.border span{
+	width: 75%;
+}
+#skills div.container div.right ul li:last-child div.border span{
+	width: 90%;
+}
+
+#education{
+
+}
+#education section.wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+#education div.container{
+	width: 45%;
+	margin-right: 3%;
+}
+#education div.container h4{
+	font-size: 32px;
+	margin: 20px 0;
+}
+#education div.container ul{
+
+}
+#education div.container ul li{
+    display: flex;
+    align-items: baseline;
+}
+#education div.container ul li span.disc{
+	height: 16px;
+	width: 16px;
+	/* border: 1px solid blue; */
+	margin: 25px 10px 0 0;
+	padding: 7px;
+	background: grey;
+	border-radius: 20px;
+}
+#education div.container ul li span.active{
+	background-color: #005af2;
+	border: 1px solid #005af2;
+}
+#education div.container ul li span.disc::after{
+	content: "";
+	border: 0.5px solid grey;
+	/* height: 178%; */
+	padding: 0px 0px 220px;
+}
+#education div.container ul li div.content{
+	
+}	
+#education div.container ul li div.content span.year.active{
+	background-color: #005af2;
+}
+#education div.container ul li div.content span.year{
+	background: grey;
+	padding: 10px 22px;
+	width: 45%;
+	display: inline-block;
+	border-radius: 100px 0 200px 100px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+#education div.container ul li div.content div.content-wrap{
+	background: lightgrey;
+	padding: 20px 16px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+}
+#education div.container ul li div.content div.content-wrap h3{
+	font-weight: 600;
+}
+#education div.container ul li div.content div.content-wrap small{
+	display: inline-block;
+	color: blue;
+	font-size: 16px;
+	margin: 12px 0;
+}
+#education div.container ul li div.content div.content-wrap p{
+	font-size: 16px;
+	font-weight: 300;
 }
