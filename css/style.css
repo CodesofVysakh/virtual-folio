@@ -355,24 +355,46 @@ margin: 8px 0;
     display: flex;
     align-items: baseline;
 }
-#education div.container ul li span.disc{
+#education div.container ul li div.circle {
+	width: 30px;
+	height: 26px;
+	margin-right: 10px;
+	position: relative;
+	top: 8px;
+	left: 1px;
+}
+#education div.container ul li div.circle span.disc{
 	height: 16px;
 	width: 16px;
-	/* border: 1px solid blue; */
-	margin: 25px 10px 0 0;
-	padding: 7px;
+	display: inline-block;
 	background: grey;
 	border-radius: 20px;
+	position: absolute;
+	top: 7px;
+	left: 5px;
 }
-#education div.container ul li span.active{
+#education div.container ul li div.circle span.disc.active{
 	background-color: #005af2;
-	border: 1px solid #005af2;
+	position: absolute;
+	top: 2px;
+	left: 2px;
 }
-#education div.container ul li span.disc::after{
+#education div.container ul li div.circle.border{
+	/* background-color: #005af2; */
+	border: 3px solid #005af2;
+	border-radius: 26px;
+	margin: 0 10px 0 0px;
+}
+#education div.container ul li div.circle span.disc::after{
 	content: "";
 	border: 0.5px solid grey;
-	/* height: 178%; */
-	padding: 0px 0px 220px;
+	padding: 0px 0px 206px;
+	position: absolute;
+	left: 7px;
+	top: 18px;
+}
+#education div.container ul li div.circle span.disc.last::after{
+	padding: 0px 0px 160px;
 }
 #education div.container ul li div.content{
 	
@@ -407,4 +429,85 @@ margin: 8px 0;
 #education div.container ul li div.content div.content-wrap p{
 	font-size: 16px;
 	font-weight: 300;
+}
+
+#services{
+	margin: 10% 0 7%;
+}
+#services section.wrapper{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+#services span.bg{
+	display: inline-block;
+	background: #d6e3ff;
+	width: 12%;
+	margin: 0 auto;
+	padding: 8px;
+	border-radius: 20px;
+	color: blue;
+}
+#services h3{
+	font-size: 40px;
+	margin: 10px 0 50px;
+}
+#services ul{
+	display: flex;
+	justify-content: space-between;
+}
+#services ul li{
+	width: 20%;
+}
+#services ul li div.image{
+	width: 80px;
+	height: 80px;
+	margin: 0 auto 20px;
+	background: #e8e8e8;
+	padding: 50px;
+	border-radius: 50%;
+	position: relative;
+}
+#services ul li div.image img{
+	display: block;
+	width: 25px;
+	margin: auto;
+	position: absolute;
+	top: 37px;
+	left: 37px;
+}
+#services ul li h5{
+	font-size: 25px;
+	margin-bottom: 12px;
+	color: blue;
+}
+#services ul li p{
+    font-weight: normal;
+}
+
+#background{
+	background: url(../images/bg_banner.jpg) no-repeat center;
+}
+#background div.bg{
+	background: rgba(0, 0, 0, 0.8);
+}
+#background ul{
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+#background ul li{
+	width: 23%;
+	margin: 10% 0;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+#background ul li span{
+	font-size: 40px;
+	font-weight: 600;
+}
+#background ul li small{
+	font-size: 16px;
+	margin-top: 10px;
 }
