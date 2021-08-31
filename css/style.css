@@ -1,730 +1,1203 @@
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-	background: transparent;
-	font-weight: normal;
-	text-decoration: none;
-	outline: none;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 del {
-	text-decoration: line-through;
+    text-decoration: line-through;
 }
+
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 17px;
-	color: #000;
-	overflow-x: hidden;
-	min-width: 320px;
-	font-weight: 500;
-	background: url(../images/bg_banner.jpg) no-repeat fixed 100%;
-	z-index: -5;
-}
-input,textarea,select{
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    min-width: 320px;
+    font-weight: 500;
+    background: url("../images/bg_banner.jpg") 100% center no-repeat fixed;
+    z-index: -5;
 }
 
-a{
-	color: #000;
-	font-size: 16px;
-	font-weight: 600;
-}
-.thumb{
-	display: block;
-}
-.thumb img{
-	display: block;
-	width:100%;
+input, textarea, select {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
-p{
-	line-height:1.6em;
-	font-size: 18px;
-	font-weight: 600;
-	color: #000;
+a {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 600;
 }
-.hidden{
-	display:none;
+
+.thumb {
+    display: block;
 }
+
+.thumb img {
+    display: block;
+    width: 100%;
+}
+
+p {
+    line-height: 1.6em;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.hidden {
+    display: none;
+}
+
 br.clear {
-	clear: both;
-	line-height: 0;
+    clear: both;
+    line-height: 0;
 }
+
 .wrapper {
-	width: 90%;
-	margin: 0 auto;
-	max-width:1200px;
+    width: 90%;
+    margin: 0px auto;
+    max-width: 1200px;
 }
+
 ::placeholder {
-  color: #9B9B9B;
-  opacity: 1;
+    color: rgb(155, 155, 155);
+    opacity: 1;
 }
 
-:-ms-input-placeholder {
-  color: #9B9B9B;
+header {
+    padding: 25px 0px;
+    background: rgba(156, 156, 156, 0.9);
+    width: 100%;
+    position: absolute;
+    top: 50px;
 }
 
-::-ms-input-placeholder {
-  color: #9B9B9B;
-}
-
-header{
-	padding: 25px 0;
-	background: rgba(156, 156, 156, 0.9);
-	width: 100%;
-	position: absolute;
-	top: 50px;
-}
-header section.wrapper{
-	display: flex;
-	justify-content: space-between;
+header section.wrapper {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-header h1{
-    
+
+header h1 {
 }
-header h1 a{
-	color: #fff;
-	font-size: 22px;
+
+header h1 a {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
 }
-header nav{
-	width: 50%;
+
+header nav {
+    width: 50%;
 }
-header nav ul{
+
+header nav ul {
     display: flex;
-	justify-content: center;
+    justify-content: center;
 }
-header nav ul li{
-	margin-right: 30px;
+
+header nav ul li {
+    margin-right: 30px;
 }
-header nav ul li:last-child{
-	margin-right: 0px;
+
+header nav ul li:last-child {
+    margin-right: 0px;
 }
-header nav ul li a{
+
+header nav ul li a {
     color: rgb(204, 204, 204);
 }
-header nav ul li:first-child a{
-    color: #fff;
+
+header nav ul li a:hover, header nav ul li:first-child a:hover {
+    color: rgb(0, 82, 242);
+    text-decoration: underline;
 }
+
+header nav ul li:first-child a {
+    color: rgb(255, 255, 255);
+}
+
 header div.right {
-    
 }
-header div.right a.button{
+
+header div.right a.button {
     padding: 16px;
-	background-color: #005af2;
-	border-radius: 50%;
-}
-header div.right a{
-    color: #fff;
-}
-
-#spotlight{
-	background: url(../images/bg_image_1.jpg) no-repeat;
-	background-size: cover;
-	color: #fff;
-}
-
-#spotlight div.overlay{
-	content: "";
-	height: 100%;
-	width: 100%;
-	background: rgba(0, 0, 0, 0.5);
-}
-#spotlight section.wrapper{
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	
-}
-#spotlight h3{
-	
-}
-#spotlight p{
-	margin: 20px 0;
-	color: #fff;
-	font-size: 30px;
-	font-weight: normal;
-
-}
-#spotlight p span{
-	color: #005af2;
-	font-weight: 800;
-	font-size: 34px;
-
-}
-#spotlight span{
-
-}
-#spotlight span.box{
-	padding: 12px 40px;
-	background-color: #383739;
-	border-radius: 24px;
-	color: #005af2;
-}
-
-#profile{
-	padding: 100px 0 35px;
-	background: #fff;
-}
-#profile section.wrapper{
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-}
-#profile div.left{
-	width: 40%;
-	margin-right: 50px;
-	position: relative;
-}
-#profile div.left div.image{
-	width: 60%;
-	position: relative;
-}
-#profile div.left div.image div.box{
-	height: 100%;
-	width: 100%;
-	border: 4px solid #005af2;
-	position: absolute;
-    top: -20px;
-    left: 20px;
-    z-index: -2;
-}
-#profile div.left div.image img{
-	display: block;
-	width: 100%;
-}
-#profile div.right{
-	width: 45%;
-}
-#profile div.right h3{
-	font-size: 32px;
-	margin-bottom: 10px;
-}
-#profile div.right span{
-	color: #005af2;
-}
-#profile div.right p{
-	font-size: 16px;
-	font-weight: normal;
-	color: grey;
-	margin: 10px 0;
-}
-#profile div.right ul{
-	display: flex;
-	flex-direction: column;
-}
-#profile div.right ul li{
-	margin: 6px 0;
-	position: relative;
-}
-#profile div.right ul li span{
-	border: 2px solid #005af2;
-    display: inline-block;
-    width: 12px;
-	height: 12px;
-    margin-right: 15px;
+    background-color: rgb(0, 90, 242);
     border-radius: 50%;
 }
-#profile div.right ul li span::after {
+
+header div.right a {
+    color: rgb(255, 255, 255);
+}
+
+#spotlight {
+    background: url("../images/bg_image_1.jpg") 0% 0% / cover no-repeat;
+    color: rgb(255, 255, 255);
+}
+
+#spotlight div.overlay {
     content: "";
-    border-left: 1px solid #005af2;
-    height: 21px;
-    position: absolute;
-    top: 14px;
-    left: 5px;
-}
-#profile div.right ul li:last-child span::after {
-	border: none;
-}
-#profile div.right ul li b{
-	
-}
-#profile div.right a{
-	
-}
-#profile div.right a.button{
-	margin: 20px 0;
-	border: 2px solid #005af2;
-	padding: 12px 16px;
-	display: inline-block;
-	color: #005af2;
-	border-radius: 12px;
-} 
-
-#skills{
-
-padding: 20px 0 60px;
-
-background: #fff;
-}
-#skills h3{
-	text-align: center;
-	font-size: 32px;
-	margin-bottom: 20px;
-}
-#skills div.container{
-	display: flex;
-	justify-content: flex-start;
-}
-#skills div.container div.content{
-	width: 50%;
-}
-#skills div.container div.content h5{
-
-	font-size: 22px;
-	margin-bottom: 10px;
-	font-weight: bold;
-}
-#skills div.container div.content ul{
-
-}
-#skills div.container div.content ul li{
-
-}
-#skills div.container div.content ul li h6{
-	font-size: 18px;
-}
-#skills div.container div.content ul li div.border{
-
-border: 3px solid #005af2;
-
-padding: 1px;
-
-border-radius: 20px;
-
-width: 90%;
-
-margin: 8px 0;
-}
-#skills div.container div.content ul li div.border span{
-	font-size: 14px;
-	text-align: center;
-	color: #fff;
-	border-radius: 30px;
-	padding: 3px 16px;
-	background: #005af2;
-	display: block;
-	width: 85%;
-}
-#skills div.container div.content ul li:first-child div.border span{
-	width: 86%;
-}
-#skills div.container div.content ul li:nth-child(2) div.border span{
-	width: 80%;
-}
-#skills div.container div.content ul li:nth-child(3) div.border span{
-	width: 100%;
-}
-#skills div.container div.content ul li:last-child div.border span{
-	width: 95%;
-}
-#skills div.container div.right ul li:first-child div.border span{
-	width: 82%;
-}
-#skills div.container div.right ul li:nth-child(2) div.border span{
-	width: 75%;
-}
-#skills div.container div.right ul li:last-child div.border span{
-	width: 90%;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-#education{
-
-background: #fff;
-}
-#education section.wrapper{
-	display: flex;
-	justify-content: space-between;
-}
-#education div.container{
-	width: 45%;
-	margin-right: 3%;
-}
-#education div.container h4{
-	font-size: 32px;
-	margin: 20px 0;
-}
-#education div.container ul{
-
-}
-#education div.container ul li{
+#spotlight section.wrapper {
+    height: 100vh;
     display: flex;
-    align-items: baseline;
-}
-#education div.container ul li div.circle {
-	width: 30px;
-	height: 26px;
-	margin-right: 10px;
-	position: relative;
-	top: 8px;
-	left: 1px;
-}
-#education div.container ul li div.circle span.disc{
-	height: 16px;
-	width: 16px;
-	display: inline-block;
-	background: grey;
-	border-radius: 20px;
-	position: absolute;
-	top: 7px;
-	left: 5px;
-}
-#education div.container ul li div.circle span.disc.active{
-	background-color: #005af2;
-	position: absolute;
-	top: 2px;
-	left: 2px;
-}
-#education div.container ul li div.circle.border{
-	/* background-color: #005af2; */
-	border: 3px solid #005af2;
-	border-radius: 26px;
-	margin: 0 10px 0 0px;
-}
-#education div.container ul li div.circle span.disc::after{
-	content: "";
-	border: 0.5px solid grey;
-	padding: 0px 0px 206px;
-	position: absolute;
-	left: 7px;
-	top: 18px;
-}
-#education div.container ul li div.circle span.disc.last::after{
-	padding: 0px 0px 160px;
-}
-#education div.container ul li div.content{
-	
-}	
-#education div.container ul li div.content span.year.active{
-	background-color: #005af2;
-}
-#education div.container ul li div.content span.year{
-	background: grey;
-	padding: 10px 22px;
-	width: 45%;
-	display: inline-block;
-	border-radius: 100px 0 200px 100px;
-	margin-bottom: 10px;
-	color: #fff;
-}
-#education div.container ul li div.content div.content-wrap{
-	background: lightgrey;
-	padding: 20px 16px;
-	margin-bottom: 20px;
-	border-radius: 4px;
-}
-#education div.container ul li div.content div.content-wrap h3{
-	font-weight: 600;
-}
-#education div.container ul li div.content div.content-wrap small{
-	display: inline-block;
-	color: blue;
-	font-size: 16px;
-	margin: 12px 0;
-}
-#education div.container ul li div.content div.content-wrap p{
-	font-size: 16px;
-	font-weight: 300;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#services{
-	padding: 10% 0 7%;
-	background: #fff;
+#spotlight h3 {
 }
-#services section.wrapper{
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-}
-#services span.bg{
-	display: inline-block;
-	background: #d6e3ff;
-	width: 12%;
-	margin: 0 auto;
-	padding: 8px;
-	border-radius: 20px;
-	color: blue;
-}
-#services h3{
-	font-size: 40px;
-	margin: 10px 0 50px;
-}
-#services ul{
-	display: flex;
-	justify-content: space-between;
-}
-#services ul li{
-	width: 20%;
-}
-#services ul li div.image{
-	width: 80px;
-	height: 80px;
-	margin: 0 auto 20px;
-	background: #e8e8e8;
-	padding: 50px;
-	border-radius: 50%;
-	position: relative;
-}
-#services ul li div.image img{
-	display: block;
-	width: 25px;
-	margin: auto;
-	position: absolute;
-	top: 37px;
-	left: 37px;
-}
-#services ul li h5{
-	font-size: 25px;
-	margin-bottom: 12px;
-	color: blue;
-}
-#services ul li p{
+
+#spotlight p {
+    margin: 20px 0px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
     font-weight: normal;
 }
 
-#background{
-
-}
-#background div.bg{
-	background: rgba(0, 0, 0, 0.4);
-}
-#background ul{
-	text-align: center;
-	display: flex;
-	justify-content: space-between;
-}
-#background ul li{
-	width: 23%;
-	margin: 10% 0;
-	color: #fff;
-	display: flex;
-	flex-direction: column;
-}
-#background ul li span{
-	font-size: 40px;
-	font-weight: 600;
-}
-#background ul li small{
-	font-size: 16px;
-	margin-top: 10px;
+#spotlight p span {
+    color: rgb(0, 90, 242);
+    font-weight: 800;
+    font-size: 34px;
 }
 
-#work{
-	background: #fff;
-	padding-bottom: 10px;
+#spotlight span {
 }
-#work div.top{
-	padding: 10% 0 7%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+
+#spotlight span.box {
+    padding: 12px 40px;
+    background-color: rgb(56, 55, 57);
+    border-radius: 24px;
+    color: rgb(0, 90, 242);
 }
-#work div.top span.bg{
-	padding: 5px 25px;
-	background: #a0bbfa;
-	border-radius: 32px;
-	color: blue;
+
+#profile {
+    padding: 100px 0px 35px;
+    background: rgb(255, 255, 255);
 }
-#work div.top h3{
-	margin: 20px 0;
-	font-size: 40px;
+
+#profile section.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
-#work div.top ul{
-	width: 40%;
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+
+#profile div.left {
+    width: 40%;
+    margin-right: 50px;
+    position: relative;
 }
-#work div.top ul li{
-	margin-right: 5px;
-	margin-bottom: 10px;
-	border: 2px solid #9B9B9B;
-	border-radius: 32px;
+
+#profile div.left div.image {
+    width: 60%;
+    position: relative;
+    z-index: 1;
 }
-#work div.top ul li:last-child, #work div.top ul li:nth-child(5){
-	margin-right: 0px;
+
+#profile div.left div.image div.box {
+    height: 100%;
+    width: 100%;
+    border: 4px solid rgb(0, 90, 242);
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    z-index: -1;
 }
-#work div.top ul li div.border{
-	padding: 2px;
-	border-radius: 32px;
+
+#profile div.left div.image img {
+    display: block;
+    width: 100%;
 }
-#work div.top ul li:hover{
-	border: 2px solid #005af2;
+
+#profile div.right {
+    width: 45%;
 }
-#work div.top ul li a{
-	font-weight: normal;
-	display: block;
+
+#profile div.right h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
 }
-#work div.top ul li a.button{
-	padding: 5px 15px;
-	border-radius: 32px;
+
+#profile div.right span {
+    color: rgb(0, 90, 242);
 }
-#work div.top ul li a.button:hover{
-	background: #005af2;
-	color: #fff;
+
+#profile div.right p {
+    font-size: 16px;
+    font-weight: normal;
+    color: grey;
+    margin: 10px 0px;
 }
-#work div.bottom{
+
+#profile div.right ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#profile div.right ul li {
+    margin: 6px 0px;
+    position: relative;
+}
+
+#profile div.right ul li span {
+    border: 3px solid rgb(0, 90, 242);
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+#profile div.right ul li span::after {
+    content: "";
+    border-left: 2px solid rgb(186, 186, 186);
+    height: 21px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+}
+
+#profile div.right ul li:last-child span::after {
+    border: none;
+}
+
+#profile div.right ul li b {
+    font-weight: bolder;
+}
+
+#profile div.right a {
+}
+
+#profile div.right a.button {
+    margin: 20px 0px;
+    border: 2px solid rgb(0, 90, 242);
+    padding: 12px 16px;
+    display: inline-block;
+    color: rgb(0, 90, 242);
+    border-radius: 12px;
+    box-shadow: rgb(0, 82, 242) 3px 3px 8px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+#profile div.right a:hover {
+    transform: scale(1.05);
+}
+
+#skills {
+    padding: 20px 0px 60px;
+    background: rgb(255, 255, 255);
+}
+
+#skills h3 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#skills div.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#skills div.container div.content {
+    width: 50%;
+}
+
+#skills div.container div.content h5 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#skills div.container div.content ul {
+}
+
+#skills div.container div.content ul li {
+}
+
+#skills div.container div.content ul li h6 {
+    font-size: 18px;
+}
+
+#skills div.container div.content ul li div.border {
+    border: 3px solid rgb(0, 90, 242);
+    padding: 1px;
+    border-radius: 20px;
+    width: 90%;
+    margin: 8px 0px;
+}
+
+#skills div.container div.content ul li div.border span {
+    font-size: 14px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 3px 16px;
+    background: rgb(0, 90, 242);
+    display: block;
+    width: 85%;
+}
+
+#skills div.container div.content ul li:first-child div.border span {
+    width: 86%;
+}
+
+#skills div.container div.content ul li:nth-child(2) div.border span {
+    width: 80%;
+}
+
+#skills div.container div.content ul li:nth-child(3) div.border span {
+    width: 100%;
+}
+
+#skills div.container div.content ul li:last-child div.border span {
+    width: 95%;
+}
+
+#skills div.container div.right ul li:first-child div.border span {
+    width: 82%;
+}
+
+#skills div.container div.right ul li:nth-child(2) div.border span {
+    width: 75%;
+}
+
+#skills div.container div.right ul li:last-child div.border span {
+    width: 90%;
+}
+
+#education {
+    background: rgb(255, 255, 255);
+}
+
+#education section.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#education div.container {
+    width: 45%;
+    /* margin-right: 3%; */
+}
+
+#education div.container h4 {
+    font-size: 32px;
+    margin: 20px 0px;
+}
+
+#education div.container ul {
+}
+
+#education div.container ul li {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#education div.container ul li div.circle {
+    width: 26px;
+    height: 26px;
+    /* margin-right: 10px; */
+    position: relative;
+    top: 8px;
+    left: 0px;
+}
+
+#education div.container ul li div.circle span.disc {
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    background: grey;
+    border-radius: 20px;
+    position: absolute;
+    top: 7px;
+    left: 5px;
+}
+
+#education div.container ul li div.circle span.disc.active {
+    background-color: rgb(0, 90, 242);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border: 1px solid #fff;
+}
+
+#education div.container ul li div.circle.border {
+    border: 3px solid rgb(0, 90, 242);
+    border-radius: 26px;
+    /* margin: 0px 10px 0px 0px; */
+}
+
+#education div.container ul li div.circle span.disc::after {
+    content: "";
+    border: 0.5px solid grey;
+    padding: 0px 0px 206px;
+    position: absolute;
+    left: 7px;
+    top: 17px;
+}
+
+#education div.container ul li div.circle span.disc.last::after {
+    padding: 0px 0px 160px;
+}
+
+#education div.container ul li div.content {margin-left: 10px;width: 90%;}
+
+#education div.container ul li div.content span.year.active {
+    background-color: rgb(0, 90, 242);
+}
+
+#education div.container ul li div.content span.year {
+    background: grey;
+    padding: 10px 22px;
+    width: 45%;
+    display: inline-block;
+    border-radius: 100px 0px 200px 100px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+
+#education div.container ul li div.content div.content-wrap {
+    background: lightgrey;
+    padding: 20px 16px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+#education div.container ul li div.content div.content-wrap h3 {
+    font-weight: 600;
+}
+
+#education div.container ul li div.content div.content-wrap small {
+    display: inline-block;
+    color: blue;
+    font-size: 16px;
+    margin: 12px 0px;
+}
+
+#education div.container ul li div.content div.content-wrap p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#services {
+    padding: 10% 0px 7%;
+    background: rgb(255, 255, 255);
+}
+
+#services section.wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#services span.bg {
+    display: inline-block;
+    background: rgb(214, 227, 255);
+    width: 12%;
+    margin: 0px auto;
+    padding: 8px;
+    border-radius: 20px;
+    color: blue;
+}
+
+#services h3 {
+    font-size: 40px;
+    margin: 20px 0px 50px;
+}
+
+#services ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#services ul li {
+    width: 23%;
+}
+
+#services ul li div.image {
+    width: 80px;
+    height: 80px;
+    margin: 0px auto 20px;
+    background: rgb(232, 232, 232);
+    padding: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+
+#services ul li div.image img {
+    display: block;
+    width: 25px;
+    margin: auto;
+    position: absolute;
+    top: 37px;
+    left: 37px;
+}
+
+#services ul li h5 {
+    font-size: 25px;
+    margin-bottom: 12px;
+    color: blue;
+}
+
+#services ul li p {
+    font-weight: normal;
+}
+
+#background {
+}
+
+#background div.bg {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#background ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#background ul li {
+    width: 23%;
+    margin: 10% 0px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+#background ul li span {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#background ul li small {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#work {
+    background: rgb(255, 255, 255);
+    padding-bottom: 10px;
+}
+
+#work div.top {
+    padding: 10% 0px 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#work div.top span.bg {
+    padding: 5px 25px;
+    background: rgb(160, 187, 250);
+    border-radius: 32px;
+    color: blue;
+}
+
+#work div.top h3 {
+    margin: 20px 0px;
+    font-size: 40px;
+}
+
+#work div.top ul {
+    width: 45%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#work div.top ul li {
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 32px;
+}
+
+#work div.top ul li div.border {
+    padding: 2px;
+    border-radius: 32px;
+}
+
+#work div.top ul li:hover {
+    border: 2px solid rgb(0, 90, 242);
+}
+
+#work div.top ul li a {
+    font-weight: normal;
+    display: block;
+}
+
+#work div.top ul li a.button {
+    padding: 5px 17px;
+    border-radius: 32px;
+}
+
+#work div.top ul li a.button:hover {
+    background: rgb(0, 90, 242);
+    color: rgb(255, 255, 255);
+}
+
+#work div.bottom {
+}
+
+#work div.bottom ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+#work div.bottom ul li {
+    width: 31%;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+#work div.bottom ul li div.image {
+}
+
+#work div.bottom ul li div.image img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+#work div.bottom ul li div.content {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 15%;
+    background: rgb(50, 49, 49);
+    width: 100%;
+    padding: 10px 18px;
+    border-radius: 0px 0px 8px 8px;
+    opacity: 0;
+    transition: height 1s ease 0s;
+}
+
+#work div.bottom ul li:hover div.content {
+    opacity: 1;
+    cursor: pointer;
+    height: 30%;
+}
+
+#work div.bottom ul li div.content p {
+    color: rgb(0, 82, 250);
+}
+
+#work div.bottom ul li div.content small {
+    color: rgb(255, 255, 255);
+}
+
+#work div.bottom a.button {
+    background: blue;
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 15%;
+    border-radius: 8px;
+    border: 2px solid white;
+    box-shadow: rgb(0, 0, 0) 1px 1px 4px;
+}
+
+#work div.bottom a {
+    display: block;
+    margin: 0px auto;
+    transition: all 1s ease 0s;
+}
+
+#work div.bottom a:hover {
+    transform: scale(1.2);
+}
+
+#testimonial {
+    background-color: rgb(255, 255, 255);
+    padding: 10% 0px;
+}
+
+#testimonial div.top {
+    margin-bottom: 100px;
+}
+
+#testimonial div.top h3 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#testimonial div.bottom {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+#testimonial div.bottom div.left {
+    width: 33%;
+    margin-right: 60px;
+}
+
+#testimonial div.bottom div.left div.image {
+    background: url("../images/testimonials/testimonials_1.jpg") 0% 0% / cover no-repeat;
+    height: 100%;
+    border-radius: 8px;
+}
+
+#testimonial div.bottom div.right {
+    width: 30%;
+}
+
+#testimonial div.bottom div.right p {
+    margin-top: 40px;
+    font-weight: normal;
+}
+
+#testimonial div.bottom div.right div.content {
+    margin-top: 30px;
+    display: flex;
+}
+
+#testimonial div.bottom div.right div.content div.image {
+    background: url("../images/testimonials/testimonials_1.jpg") 0% 0% / cover no-repeat;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+#testimonial div.bottom div.right div.content div.designation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#testimonial div.bottom div.right div.content div.designation span {
+    font-size: 26px;
+}
+
+#testimonial div.bottom div.right div.content div.designation small {
+    font-size: 16px;
+    color: grey;
+}
+
+#logos {
+    background-color: rgb(23, 25, 37);
+}
+
+#logos ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10% 0px;
+    position: relative;
+}
+
+#logos ul li {
+    width: 23%;
+    padding: 50px 0px;
+    border-right: 1px solid rgb(65, 66, 79);
+    cursor: pointer;
+}
+
+#logos ul li:hover img {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#logos ul li:nth-child(5)::before {
+    content: "";
+    background-color: rgb(65, 66, 79);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+}
+
+#logos ul li:nth-child(4n) {
+    border: none;
+}
+
+#logos ul li div.image {
+    width: 50%;
+    margin: 0px auto;
+    filter: grayscale(1) brightness(2);
+}
+
+#logos ul li div.image img {
+    display: block;
+    width: 80%;
+}
+
+#blog {
+    background-color: rgb(255, 255, 255);
+    padding: 5% 0px;
+}
+
+#blog div.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blog div.top span.blog {
+    background-color: rgb(223, 231, 253);
+    padding: 8px 40px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    color: rgb(0, 82, 250);
+}
+
+#blog div.top h3 {
+    font-size: 40px;
+    margin: 10px 0px 40px;
+}
+
+#blog div.bottom {
+    text-align: center;
+}
+
+#blog div.bottom ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#blog div.bottom ul li {
+    width: 30%;
+    text-align: left;
+    transition: all 0.4s ease-in-out 0s;
+    cursor: pointer;
+}
+
+#blog div.bottom ul li:hover {
+    transform: scale(1.1);
+}
+
+#blog div.bottom ul li div.image {
+}
+
+#blog div.bottom ul li div.image img {
+    display: block;
+    width: 100%;
+}
+
+#blog div.bottom ul li div.content {
+    padding: 15px;
+    box-shadow: rgb(139, 139, 139) 3px 3px 8px;
+}
+
+#blog div.bottom ul li div.content h5 {
+    color: rgb(0, 82, 250);
+    font-size: 20px;
+}
+
+#blog div.bottom ul li div.content p {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+#blog div.bottom ul li div.content small {
+    color: rgb(139, 139, 139);
+}
+
+#blog div.bottom a.button {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 82, 250);
+    padding: 14px 30px;
+    border-radius: 8px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: rgb(129, 129, 129) 3px 3px 8px;
+    margin: 5% 0px 0px;
+    display: inline-block;
+    transition: all 1s ease 0s;
+}
+
+#blog div.bottom a:hover {
+    transform: scale(1.2);
+}
+
+#contact {
+    background-color: rgb(255, 255, 255);
+    padding: 10% 0px;
+}
+
+#contact {
+}
+
+#contact div.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact div.top span.contact {
+    background: rgb(223, 231, 253);
+    padding: 8px 30px;
+    border-radius: 32px;
+    color: rgb(0, 82, 242);
+    margin-bottom: 20px;
+}
+
+#contact div.top h3 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+#contact div.bottom {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#contact div.bottom div.left {
+    width: 50%;
+    padding: 25px 0;
+}
+
+#contact div.bottom div.left img {
+    display: block;
+    width: 55%;
+    position: absolute;
+    left: 0px;
+}
+
+#contact div.bottom div.right {
+    width: 33%;
+}
+
+#contact div.bottom div.right form {
+    display: flex;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#contact div.bottom div.right form input {
+    width: 100%;
+    padding: 13px 12px;
+    border: 2px solid rgb(155, 155, 155);
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#contact div.bottom div.right form input[type="text"] {
+}
+
+#contact div.bottom div.right form input[type="email"] {
+    width: 48%;
+    display: inline-block;
+}
+
+#contact div.bottom div.right form input.subject[type="text"] {
+    width: 49%;
+    display: inline-block;
+}
+
+#contact div.bottom div.right form input.subject {
+}
+
+#contact div.bottom div.right form input[type="submit"] {
+    width: 50%;
+    background: rgb(0, 82, 242);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: rgb(139, 139, 139) 3px 3px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#contact div.bottom div.right form textarea {
+    border: 2px solid rgb(155, 155, 155);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(155, 155, 155);
+    font-size: 16px;
+}
+
+footer {
+    background-color: rgb(23, 25, 37);
+    color: rgb(255, 255, 255);
+    padding: 5% 0px;
+}
+
+footer div.top {
+}
+
+footer div.top h3 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: rgb(155, 155, 155);
+}
+
+footer div.top div.items {
+    width: 91%;
+    display: flex;
+}
+
+footer div.top div.items div.item {
+    width: 20%;
+    margin-right: 20px;
+}
+
+footer div.top div.items div.item.first {
+    width: 50%;
+}
+
+footer div.top div.items div.item.first ul {
+    /* width: 65%; */
+}
+
+footer div.top div.items div.item ul {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+
+footer div.top div.items div.item h5 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: rgb(155, 155, 155);
+}
+
+footer div.top div.items div.item h5::after {
+    content: "";
+    border-bottom: 2px dashed rgb(155, 155, 155);
+    width: 50%;
+    height: 4px;
+    display: block;
+    margin-top: 10px;
+}
+
+footer div.top div.items div.item.first h5::after {
+    width: 30%;
+}
+
+footer div.top div.items div.item.last h5::after {
+    width: 90%;
+}
+
+footer div.top div.items div.item ul li {
+    margin-bottom: 8px;
+}
+
+footer div.top div.items div.item ul li:last-child {
+    margin-bottom: 0px;
+}
+
+footer div.top div.items div.item ul li a {
+    color: rgb(205, 205, 205);
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+footer div.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px 0px;
+}
+
+footer div.bottom div.subscribe {
+    width: 100%;
+}
+
+footer div.bottom div.subscribe h3 {
+    color: rgb(155, 155, 155);
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+footer div.bottom div.subscribe form {
+    margin: 20px auto 40px;
+    width: 50%;
+    position: relative;
+    display: flex;
+}
+
+footer div.bottom div.subscribe form input {
+    padding: 20px 26px;
+    background: rgb(32, 35, 52);
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+footer div.bottom div.subscribe form input[type="email"] {
+    width: 100%;
+}
+
+footer div.bottom div.subscribe form input[type="submit"] {
+    background-color: rgb(0, 82, 250);
+    position: absolute;
+    width: 135px;
+    padding: 20px;
+    right: 0px;
+    border-radius: 0px 6px 6px 0px;
+    color: rgb(255, 255, 255);
+}
+
+footer div.bottom div.foot {
+}
+
+footer div.bottom div.foot p {
+    font-weight: normal;
+    font-size: 16px;
+    color: rgb(155, 155, 155);
+}
+
+footer div.bottom div.foot p a {
+    color: rgb(0, 82, 242);
+    text-decoration: underline;
+}
+
+footer div.bottom div.foot p span {
+    color: red;
+    font-size: 24px;
+}
+
+@media all and (max-width: 1280px){
 	
 }
-#work div.bottom ul{
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	margin-bottom: 40px;
-}
-#work div.bottom ul li{
-	width: 31%;
-	margin-right: 25px;
-	margin-bottom: 25px;
-	position: relative;
-	cursor: pointer;
-	/* border-radius: 69px; */
-}
-#work div.bottom ul li div.image{
-	/* width: 100%; */
-	/* border-radius: 20px; */
-}
-#work div.bottom ul li div.image img{
-	display: block;
-	width: 100%;
-	border-radius: 8px;
-}
-#work div.bottom ul li div.content{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 15%;
-	background: #323131;
-	width: 100%;
-	padding: 10px 18px;
-	border-radius: 0 0 8px 8px;
-	opacity: 0;
-	transition: height 1s;
-}
-#work div.bottom ul li div.content:hover{
-	opacity: 1;
-	cursor: pointer;
-	height: 30%;
 
-}
-#work div.bottom ul li div.content p{
-	color: #0052fa;
-}
-#work div.bottom ul li div.content small{
-	color: #fff;
-}
-#work div.bottom a.button{
-	background: blue;
-	padding: 16px;
-	color: #fff;
-	/* margin: 0 auto; */
-	/* display: block; */
-	text-align: center;
-	width: 15%;
-	border-radius: 8px;
-	border: 2px solid white;
-	box-shadow: 1px 1px 4px #000;
-	/* margin: 10px auto; */
-}
-#work div.bottom a{
-	display: block;
-	/* padding-bottom: 32px; */
-	margin: 0 auto;
-	transition: all 1s;
-}
-#work div.bottom a:hover{
-	transform: scale(1.2);
+@media all and (max-width: 1080px){
+	
 }
 
-#testimonial{
-	background-color: #fff;
-	padding: 10% 0;
-}
-#testimonial div.top{
-
-margin-bottom: 100px;
-}
-#testimonial div.top h3{
-	text-align: center;
-	font-size: 40px;
-	/* margin-bottom: 35px; */
-}
-#testimonial div.bottom{
-	height: 350px;
-	display: flex;
-	justify-content: center;
-}
-#testimonial div.bottom div.left{
-	width: 33%;
-	margin-right: 60px;
-}
-#testimonial div.bottom div.left div.image{
-	background: url(../images/testimonials/testimonials_1.jpg) no-repeat;
-	background-size: cover;
-	height: 100%;
-	border-radius: 8px;
+@media all and (max-width: 980px){
+	
 }
 
-#testimonial div.bottom div.right{
-	width: 30%;
-}
-#testimonial div.bottom div.right p{
-	margin-top: 40px;
-	font-weight: normal;
-}
-#testimonial div.bottom div.right div.content{
-	margin-top: 30px;
-	display: flex;
-}
-#testimonial div.bottom div.right div.content div.image{
-	background: url(../images/testimonials/testimonials_1.jpg) no-repeat;
-	background-size: cover;
-	height: 70px;
-	width: 70px;
-	border-radius: 50px;
-	margin-right: 15px;
-}
-#testimonial div.bottom div.right div.content div.designation{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-#testimonial div.bottom div.right div.content div.designation span{
-	font-size: 26px;
-}
-#testimonial div.bottom div.right div.content div.designation small{
-	font-size: 16px;
-	color: grey;
+@media all and (max-width: 768px){
+	
 }
 
-#logos{
-	background-color: #171925;
+@media all and (max-width: 640px){
+	
 }
-#logos ul{
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-#logos ul li{
-	width: 23%;
-	margin: 50px 0;
-}
-#logos ul li div.image{
-	width: 50%;
-	margin: 0 auto;
-}
-#logos ul li div.image img{
-	display: block;
-	width: 100%;
+
+@media all and (max-width: 480px){
+	
 }
