@@ -525,6 +525,7 @@ header div.right a {
 #services ul {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #services ul li {
@@ -665,7 +666,7 @@ header div.right a {
 }
 
 #work div.bottom ul li {
-    width: 31%;
+    width: 30%;
     margin-right: 25px;
     margin-bottom: 25px;
     position: relative;
@@ -963,6 +964,7 @@ header div.right a {
 #contact div.bottom {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -984,7 +986,7 @@ header div.right a {
 
 #contact div.bottom div.right form {
     display: flex;
-    padding: 20px 0px;
+    padding: 45px 0px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -1032,6 +1034,7 @@ header div.right a {
     margin-bottom: 10px;
     color: rgb(155, 155, 155);
     font-size: 16px;
+    border-radius: 4px;
 }
 
 footer {
@@ -1179,23 +1182,179 @@ footer div.bottom div.foot p span {
 }
 
 @media all and (max-width: 1280px){
-	
+	#contact div.bottom div.right form {
+        padding: 25px 0;
+    }
 }
 
 @media all and (max-width: 1080px){
-	
+	#services ul li h5 {
+        font-size: 24px;
+    }
+    #work div.top ul {
+        width: 50%;
+    }
+    #contact div.bottom div.right form input[type="submit"] {
+        font-size: 16px;
+    }
+    #work div.bottom ul li:hover div.content {
+        height: 35%;
+    }
 }
 
 @media all and (max-width: 980px){
-	
+    header {
+        padding: 22px 0px;
+    }
+	header nav ul li {
+        margin-right: 18px;
+    }
+    #profile {
+        padding: 70px 0px 35px;
+    }
+    #profile div.left {
+        width: 60%;
+        margin-right: 0px;
+    }
+    #skills div.container div.content ul li div.border span {
+        padding: 1px 16px;
+    }
+    #education div.container ul li div.content span.year {
+        width: 75%;
+    }
+    #education div.container ul li div.circle span.disc::after {
+        padding: 0px 0px 210px;
+    }
+    #services span.bg {
+        width: 20%;
+    }
+    #services ul li {
+        width: 45%;
+        margin-bottom: 25px;
+    }
+    #work div.bottom ul li {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    #work div.bottom ul li div.content {
+        height: 22%;
+    }
+    #work div.bottom ul li:hover div.content {
+        height: 45%;
+    }
+    #work div.bottom a.button {
+        width: 35%;
+    }
+    #testimonial div.bottom div.right {
+        width: 40%;
+    }
+    #blog div.bottom ul li div.content h5 {
+        font-size: 18px;
+    }
+    #blog div.bottom ul li div.content p {
+        font-size: 20px;
+    }
+    #contact div.bottom div.left {
+        width: 90%;
+    }
+    #contact div.bottom div.left img {
+        position: static;
+        width: 100%;
+    }
+    #contact div.bottom div.right {
+        width: 70%;
+    }
+    #contact div.bottom div.right form input[type="submit"] {
+        margin: 0 auto;
+    }
+    footer div.top div.items div.item {
+        width: 25%;
+    }
+    footer div.top div.items div.item h5::after {
+        width: 70%;
+    }
+    footer div.top div.items div.item.first h5::after {
+        width: 45%;
+    }
+    footer div.top div.items div.item ul li a {
+        font-size: 16px;
+    }
+    footer div.bottom div.subscribe form {
+        width: 70%;
+    }
 }
 
 @media all and (max-width: 768px){
-	
+	header section.wrapper {
+        justify-content: space-around;
+    }
+    header nav {
+        display: none;
+    }
+    #profile {
+        padding-top: 35px;
+    }
+    #profile div.left div.image {
+        width: 80%;
+    }
+    #skills div.container div.content ul li div.border span {
+        padding: 0px 16px;
+    }
+    #education div.container ul li div.circle span.disc::after {
+        padding: 0px 0px 235px;
+    }
+    #education div.container ul li div.circle span.disc.last::after {
+        padding: 0px 0px 220px;
+    }
+    #work div.top ul {
+        width: 75%;
+    }
+    #work div.bottom ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    #work div.bottom ul li {
+        width: 32%;
+    }
+    #work div.bottom ul li:hover div.content {
+        height: 50%;
+    }
+    #work div.bottom ul li div.content p {
+        font-size: 14px;
+    }
+    #work div.bottom a.button {
+        width: 30%;
+    }
+    #work div.bottom a.button {
+        padding: 12px;
+    }
+    #testimonial div.top {
+        margin-bottom: 60px;
+    }
+    #testimonial div.bottom {
+        height: 250px;
+    }
+    #testimonial div.bottom div.left {
+        margin-right: 45px;
+    }
+    #testimonial div.bottom div.right {
+        width: 45%;
+    }
+    #testimonial div.bottom div.right div.content {
+        margin-top: 10px;
+    }
+    #testimonial div.bottom div.right div.content div.designation span {
+        font-size: 22px;
+    }
+    footer div.bottom div.foot p, footer div.bottom div.foot p a {
+        font-size: 14px;
+    }
 }
 
 @media all and (max-width: 640px){
-	
+	#education div.container ul li div.circle span.disc::after {
+        padding: 0px 0px 285px;
+    }
 }
 
 @media all and (max-width: 480px){
