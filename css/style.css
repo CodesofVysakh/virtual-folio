@@ -241,7 +241,7 @@ header div.right a {
 #profile div.right p {
     font-size: 16px;
     font-weight: normal;
-    color: grey;
+    color: rgb(128 128 128);
     margin: 10px 0px;
 }
 
@@ -394,7 +394,6 @@ header div.right a {
 
 #education div.container {
     width: 45%;
-    /* margin-right: 3%; */
 }
 
 #education div.container h4 {
@@ -414,7 +413,6 @@ header div.right a {
 #education div.container ul li div.circle {
     width: 26px;
     height: 26px;
-    /* margin-right: 10px; */
     position: relative;
     top: 8px;
     left: 0px;
@@ -442,7 +440,6 @@ header div.right a {
 #education div.container ul li div.circle.border {
     border: 3px solid rgb(0, 90, 242);
     border-radius: 26px;
-    /* margin: 0px 10px 0px 0px; */
 }
 
 #education div.container ul li div.circle span.disc::after {
@@ -619,7 +616,7 @@ header div.right a {
 }
 
 #work div.top ul {
-    width: 45%;
+    width: 40%;
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
@@ -798,7 +795,7 @@ header div.right a {
 
 #testimonial div.bottom div.right div.content div.designation small {
     font-size: 16px;
-    color: grey;
+    color: rgb(128 128 128);
 }
 
 #logos {
@@ -1073,11 +1070,9 @@ footer div.top div.items div.item.first {
 }
 
 footer div.top div.items div.item.first ul {
-    /* width: 65%; */
 }
 
 footer div.top div.items div.item ul {
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
 }
@@ -1188,6 +1183,9 @@ footer div.bottom div.foot p span {
 @media all and (max-width: 1280px){
 	#contact div.bottom div.right form {
         padding: 25px 0;
+    }
+    #work div.top ul {
+        width: 45%;
     }
 }
 
@@ -1310,9 +1308,6 @@ footer div.bottom div.foot p span {
     #education div.container ul li div.circle span.disc::after {
         padding: 0px 0px 235px;
     }
-    /* #education div.container ul li div.circle span.disc.last::after {
-        padding: 0px 0px 220px;
-    } */
     #work div.top ul {
         width: 75%;
     }
