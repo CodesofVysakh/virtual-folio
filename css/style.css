@@ -313,6 +313,7 @@ header div.right a {
 #skills div.container {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 #skills div.container div.content {
@@ -486,7 +487,7 @@ header div.right a {
 
 #education div.container ul li div.content div.content-wrap small {
     display: inline-block;
-    color: blue;
+    color: #0052f2;
     font-size: 16px;
     margin: 12px 0px;
 }
@@ -514,7 +515,7 @@ header div.right a {
     margin: 0px auto;
     padding: 8px;
     border-radius: 20px;
-    color: blue;
+    color: #0052f2;
 }
 
 #services h3 {
@@ -554,7 +555,7 @@ header div.right a {
 #services ul li h5 {
     font-size: 25px;
     margin-bottom: 12px;
-    color: blue;
+    color: #0052f2;
 }
 
 #services ul li p {
@@ -572,6 +573,7 @@ header div.right a {
     text-align: center;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #background ul li {
@@ -608,7 +610,7 @@ header div.right a {
     padding: 5px 25px;
     background: rgb(160, 187, 250);
     border-radius: 32px;
-    color: blue;
+    color: #0052f2;
 }
 
 #work div.top h3 {
@@ -710,7 +712,7 @@ header div.right a {
 }
 
 #work div.bottom a.button {
-    background: blue;
+    background: #0052f2;
     padding: 16px;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -745,9 +747,9 @@ header div.right a {
 }
 
 #testimonial div.bottom {
-    height: 350px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #testimonial div.bottom div.left {
@@ -756,8 +758,9 @@ header div.right a {
 }
 
 #testimonial div.bottom div.left div.image {
-    background: url("../images/testimonials/testimonials_1.jpg") 0% 0% / cover no-repeat;
-    height: 100%;
+    background: url("../images/testimonials/testimonials_1.jpg") 0% 0%  no-repeat;
+    background-size: cover;
+    height: 360px;
     border-radius: 8px;
 }
 
@@ -833,7 +836,7 @@ header div.right a {
 }
 
 #logos ul li:nth-child(4n) {
-    border: none;
+    border-right: none;
 }
 
 #logos ul li div.image {
@@ -878,6 +881,7 @@ header div.right a {
 #blog div.bottom ul {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #blog div.bottom ul li {
@@ -1300,12 +1304,15 @@ footer div.bottom div.foot p span {
     #skills div.container div.content ul li div.border span {
         padding: 0px 16px;
     }
+    #education div.container {
+        width: 48%;
+    }
     #education div.container ul li div.circle span.disc::after {
         padding: 0px 0px 235px;
     }
-    #education div.container ul li div.circle span.disc.last::after {
+    /* #education div.container ul li div.circle span.disc.last::after {
         padding: 0px 0px 220px;
-    }
+    } */
     #work div.top ul {
         width: 75%;
     }
@@ -1331,14 +1338,17 @@ footer div.bottom div.foot p span {
     #testimonial div.top {
         margin-bottom: 60px;
     }
-    #testimonial div.bottom {
-        height: 250px;
-    }
     #testimonial div.bottom div.left {
         margin-right: 45px;
     }
+    #testimonial div.bottom div.left div.image {
+        height: 250px;
+    }
     #testimonial div.bottom div.right {
         width: 45%;
+    }
+    #testimonial div.bottom div.right p {
+        margin-top: 25px;
     }
     #testimonial div.bottom div.right div.content {
         margin-top: 10px;
@@ -1352,11 +1362,208 @@ footer div.bottom div.foot p span {
 }
 
 @media all and (max-width: 640px){
-	#education div.container ul li div.circle span.disc::after {
-        padding: 0px 0px 285px;
+    #spotlight p {
+        margin: 15px 0px;
+        font-size: 28px;
+    }
+    #profile {
+        padding-top: 50px;
+    }
+    #profile section.wrapper {
+        flex-direction: column;
+    }
+    #profile div.right {
+        text-align: center;
+        width: 90%;
+        margin-top: 20px;
+    }
+    #profile div.right ul {
+        width: 50%;
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+    #skills div.container div.content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #education section.wrapper {
+        flex-direction: column;
+    }
+    #education div.container {
+        width: 100%;
+    }
+    #education div.container ul li div.circle span.disc::after {
+        padding: 0px 0px 208px;
+    }
+    #education div.container ul li div.circle span.disc.last::after {
+        padding: 0px 0px 160px;
+    }
+    #services span.bg {
+        width: 30%;
+    }
+    #services ul li {
+        width: 48%;
+    }
+    #work div.top ul {
+        width: 90%;
+    }
+    #work div.bottom ul li {
+        width: 100%;
+    }
+    #work div.bottom ul li div.content {
+        height: 10%;
+    }
+    #work div.bottom ul li:hover div.content {
+        height: 20%;
+    }
+    #testimonial div.bottom div.left {
+        margin-right: 20px;
+    }
+    #testimonial div.bottom div.left {
+        width: 40%;
+    }
+    #testimonial div.bottom div.right {
+        width: 51%;
+    }
+    #testimonial div.bottom div.right p {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    #testimonial div.bottom div.right div.content div.image {
+        margin-right: 10px;
+    }
+    #testimonial div.bottom div.right div.content div.designation span {
+        font-size: 18px;
+    }
+    #blog div.bottom ul li {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    #blog div.bottom ul {
+        display: flex;
+        justify-content: center;
+    }
+    footer div.bottom div.subscribe form {
+        width: 85%;
+    }
+    footer div.bottom div.subscribe form input {
+        padding: 16px 26px;
+    }
+    footer div.bottom div.subscribe form input[type="submit"] {
+        padding: 16px;
+    }
+    footer div.bottom div.foot p {
+        text-align: center;
+    }
+}	
+
+@media all and (max-width: 480px){
+	header div.right {
+        display: none;
+    }
+    #spotlight span.box {
+        padding: 10px 35px;
+    }
+    #spotlight p {
+        font-size: 18px;
+    }
+    #spotlight p span {
+        font-size: 22px;
+    }
+    #profile div.right ul {
+        width: 80%;
+    }
+    #education div.container ul li div.content div.content-wrap h3 {
+        font-size: 18px;
+    }
+    #education div.container ul {
+        width: 90%;
+    }
+    #education div.container ul li div.circle span.disc::after {
+        padding: 0px 0px 230px;
+    }
+    #services span.bg {
+        width: 35%;
+    }
+    #services ul li {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #services ul li h5 {
+        margin-bottom: 10px;
+    }
+    #background ul li {
+        width: 50%;
+    }
+    #work div.top ul {
+        width: 100%;
+    }
+    #work div.bottom ul li div.content {
+        height: 15%;
+    }
+    #work div.bottom ul li:hover div.content {
+        height: 30%;
+    }
+    #work div.bottom a.button {
+        width: 42%;
+    }
+    #testimonial div.top h3 {
+        font-size: 35px;
+    }
+    #testimonial div.bottom div.left {
+        width: 55%;
+        margin: 0 20px;
+    }
+    #testimonial div.bottom div.right {
+        width: 80%;
+    }
+    #logos ul li {
+        width: 50%;
+        border-bottom: 1px solid rgb(65, 66, 79);
+    }
+    #logos ul li:nth-child(even) {
+        border-right: none;
+    }
+    #logos ul li:nth-child(5)::before {
+        display: none;
+    }
+    #logos ul li:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+    #blog {
+        padding: 10% 0px;
+    }
+    #contact div.bottom div.right {
+        width: 90%;
+    }
+    footer div.top div.items {
+        flex-wrap: wrap;
+    }
+    footer div.top div.items div.item.first {
+        width: 100%;
+    }
+    footer div.top div.items div.item {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+    footer div.bottom div.subscribe form {
+        width: 100%;
+    }
+    footer div.bottom div.subscribe form input {
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+    footer div.bottom div.subscribe form input[type="submit"] {
+        width: 120px;
+        padding: 12px;
     }
 }
 
-@media all and (max-width: 480px){
-	
+@media all and (max-width: 360px){
+    #education div.container ul li div.circle span.disc::after {
+        padding: 0px 0px 278px;
+    }
+    #education div.container ul li div.circle span.disc.last::after {
+        padding: 0px 0px 200px;
+    }
 }
