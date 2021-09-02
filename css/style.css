@@ -297,6 +297,9 @@ header div.right a {
 
 #profile div.right a:hover {
     transform: scale(1.05);
+    color: #e78301;
+    border: 2px solid #e78301;
+    box-shadow: rgb(242, 137, 0) 3px 3px 8px;
 }
 
 #skills {
@@ -353,34 +356,70 @@ header div.right a {
     background: rgb(0, 90, 242);
     display: block;
     width: 85%;
+    
 }
 
 #skills div.container div.content ul li:first-child div.border span {
     width: 86%;
 }
 
+#skills div.container div.content ul li:first-child div.border:hover span {
+    animation: skillbarc1 0.8s ease-in-out;
+    background: #e78301;
+}
+
 #skills div.container div.content ul li:nth-child(2) div.border span {
     width: 80%;
+}
+
+#skills div.container div.content ul li:nth-child(2) div.border:hover span {
+    animation: skillbarc2 0.8s ease-in-out;
+    background: #e78301;
 }
 
 #skills div.container div.content ul li:nth-child(3) div.border span {
     width: 100%;
 }
 
+#skills div.container div.content ul li:nth-child(3) div.border:hover span {
+    animation: skillbarc3 0.8s ease-in-out;
+    background: #e78301;
+}
+
 #skills div.container div.content ul li:last-child div.border span {
     width: 95%;
+}
+
+#skills div.container div.content ul li:last-child div.border:hover span {
+    animation: skillbarc4 0.8s ease-in-out;
+    background: #e78301;
 }
 
 #skills div.container div.right ul li:first-child div.border span {
     width: 82%;
 }
 
+#skills div.container div.right ul li:first-child div.border:hover span {
+    animation: skillbarc5 0.8s ease-in-out;
+    background: #e78301;
+}
+
 #skills div.container div.right ul li:nth-child(2) div.border span {
     width: 75%;
 }
 
+#skills div.container div.right ul li:nth-child(2) div.border:hover span {
+    animation: skillbarc6 0.8s ease-in-out;
+    background: #e78301;
+}
+
 #skills div.container div.right ul li:last-child div.border span {
     width: 90%;
+}
+
+#skills div.container div.right ul li:last-child div.border:hover span {
+    animation: skillbarc7 0.8s ease-in-out;
+    background: #e78301;
 }
 
 #education {
@@ -540,6 +579,12 @@ header div.right a {
     position: relative;
 }
 
+#services ul li div.image:hover {
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    transform: scale(1.2);
+}
+
 #services ul li div.image img {
     display: block;
     width: 25px;
@@ -652,6 +697,7 @@ header div.right a {
 #work div.top ul li a.button:hover {
     background: rgb(0, 90, 242);
     color: rgb(255, 255, 255);
+    transition: ease-in-out 0.3s;
 }
 
 #work div.bottom {
@@ -722,11 +768,11 @@ header div.right a {
 #work div.bottom a {
     display: block;
     margin: 0px auto;
-    transition: all 1s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
 #work div.bottom a:hover {
-    transform: scale(1.2);
+    background: #e78301;
 }
 
 #testimonial {
@@ -928,11 +974,11 @@ header div.right a {
     box-shadow: rgb(129, 129, 129) 3px 3px 8px;
     margin: 5% 0px 0px;
     display: inline-block;
-    transition: all 1s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
 #blog div.bottom a:hover {
-    transform: scale(1.2);
+    background: #e78301;
 }
 
 #contact {
@@ -1115,6 +1161,14 @@ footer div.top div.items div.item ul li a {
     line-height: 1.5;
 }
 
+footer div.top div.items div.item ul li a:hover {
+    color: #0052f2;
+}
+
+footer div.top div.items div.item.first ul li a:hover {
+    color: rgb(205, 205, 205);
+}
+
 footer div.bottom {
     display: flex;
     flex-direction: column;
@@ -1149,6 +1203,7 @@ footer div.bottom div.subscribe form input {
 
 footer div.bottom div.subscribe form input[type="email"] {
     width: 100%;
+    color: #fff;
 }
 
 footer div.bottom div.subscribe form input[type="submit"] {
@@ -1532,6 +1587,9 @@ footer div.bottom div.foot p span {
     #contact div.bottom div.right {
         width: 90%;
     }
+    footer div.top h3 {
+        font-size: 32px;
+    }
     footer div.top div.items {
         flex-wrap: wrap;
     }
@@ -1557,9 +1615,66 @@ footer div.bottom div.foot p span {
 
 @media all and (max-width: 360px){
     #education div.container ul li div.circle span.disc::after {
-        padding: 0px 0px 278px;
+        padding: 0px 0px 252px;
     }
     #education div.container ul li div.circle span.disc.last::after {
         padding: 0px 0px 200px;
+    }
+}
+
+@keyframes skillbarc1 {
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 86%;
+    }
+}
+@keyframes skillbarc2 {
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes skillbarc3 {
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes skillbarc4 {
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+@keyframes skillbarc5 {
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 82%;
+    }
+}
+@keyframes skillbarc6 {
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+@keyframes skillbarc7 {
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 90%;
     }
 }
